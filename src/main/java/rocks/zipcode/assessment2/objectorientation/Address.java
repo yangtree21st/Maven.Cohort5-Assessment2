@@ -93,5 +93,11 @@ public class Address {
         return false;
     }
 
+    public String toString(){
+        String result = String.format("Address{addressLine1='%s', " +
+                "addressLine2='%s', city='%s', state='%s', zipcode='%s'}", addressLine1, addressLine2, city, state, zipcode);
+        return result;
+    }
+
 
 }
