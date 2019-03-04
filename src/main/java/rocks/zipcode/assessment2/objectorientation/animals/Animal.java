@@ -17,8 +17,10 @@ public class Animal {
      */
     Long id;
     Person owner;
+    Address address = new Address();
+
     public Animal(Long id, Person owner) {
-        this.id = id ;
+        this.id = id;
         this.owner = owner;
 
     }
@@ -28,17 +30,18 @@ public class Animal {
     }
 
     public void setId(Long id) {
-        
+        this.id = id;
     }
 
     public Person getOwner() {
-        return null;
+        return owner;
     }
 
     public void setOwner(Person owner) {
+        this.owner = owner;
     }
 
     public Address getAddress() {
-        return null;
+        return address;
     }
 }
